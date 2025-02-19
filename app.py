@@ -54,14 +54,17 @@ if uploaded_files:
             st.session_state.chat_messages = []
         
         # Create context about the data
-        data_info = f"""
-        File Name: {file}
-        Number of Rows: {len(df)}
-        Number of Columns: {len(df.columns)}
-        Columns: {', '.join(df.columns.tolist())}
-        Data : {df.to_string()}
-        Basic Statistics: {df.describe().to_string()}
-        """
+        try:
+            data_info = f"""
+            File Name: {file}
+            Number of Rows: {len(df)}
+            Number of Columns: {len(df.columns)}
+            Columns: {', '.join(df.columns.tolist())}
+            Data : {df.to_string()}
+            Basic Statistics: {df.describe().to_string()}
+            """
+        except Exception as e:
+            data_info = df.to_string()
         
         # Display chat messages from history
         for message in st.session_state.chat_messages:
