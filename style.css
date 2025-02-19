@@ -1,0 +1,72 @@
+    /* Main container styling */
+    .main {
+        padding: 2rem;
+    }
+    
+    /* Header styling */
+    .stTitle {
+        color: #2c3e50;
+        font-family: 'Helvetica Neue', sans-serif;
+        padding-bottom: 2rem;
+    }
+
+    div[data-testid="stFileUploader"] {
+        border: 1px solid;
+        border-radius: 12px;
+        padding:10px;
+        transition: all 0.3s ease-in-out;
+    }
+    div[data-testid="stFileUploader"]:hover {
+        opacity: 0.7;
+        transform: scale(1.005);
+    }
+    
+    
+    /* File uploader styling */
+    .stFileUploader {
+        padding: 2rem 0;
+    }
+    
+    /* Button styling */
+    .stButton>button {
+        background-color: #3498db;
+        color: white;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+    
+    .stButton>button:hover {
+        background-color: #2980b9;
+        color: white;
+    }
+    
+    /* Download button specific styling */
+    .stDownloadButton>button {
+        background-color: #27ae60;
+    }
+    
+    .stDownloadButton>button:hover {
+        background-color: #219a52;
+    }
+    
+    /* Checkbox and radio button styling */
+    .stCheckbox, .stRadio {
+        padding: 1rem 0;
+    }
+    
+    /* Success/Error message styling */
+    .stSuccess, .stError {
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem 0;
+    }
+    
+    /* Footer styling */
+    .footer {
+        margin-top: 3rem;
+        padding: 1rem;
+        text-align: center;
+        color: #7f8c8d;
+    }
